@@ -15,12 +15,13 @@ const tail = function(arrayOne) {
     arrNew.push(arrayOne[i]);
   }
   console.log(arrNew);
-}
+};
 
 const tail2 = function(arrayThree) {
   let final = arrayThree.slice(1);
   console.log(final);
-}
+};
 
 tail([1, 2, 3, 4]);
+tail2([1, 2, 3, 4]);
 
