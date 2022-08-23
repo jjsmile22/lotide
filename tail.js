@@ -12,9 +12,15 @@ assertEqual(1, 1);
 const tail = function(arrayOne) {
   let arrNew = [];
   for (let i = 1; i < arrayOne.length; i++) {
-    arrNew.push(i);
+    arrNew.push(arrayOne[i]);
   }
   console.log(arrNew);
 }
- 
+
+const tail2 = function(arrayThree) {
+  let final = arrayThree.slice(1);
+  console.log(final);
+}
+
 tail([1, 2, 3, 4]);
+
