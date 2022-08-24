@@ -9,13 +9,6 @@ const assertEqual = function(actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
-const head = function(array) {
-  return array[0];
-};
-
-assertEqual(head([5, 6, 7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -28,3 +21,10 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+console.log(eqArrays([1, 2, 3], [1, 2, 3]));
+console.log(eqArrays([1, 2, 3], [3, 2, 1]));
+
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+
+console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
