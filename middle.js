@@ -21,17 +21,17 @@ const assertArraysEqual = function(firstArray, secondArray) {
 const middle = function(arr) {
   let finale = [];
   if (arr.length < 3) {
-    return finale;
+  return finale;
   } else if (arr.length % 2 !== 0) {
-    finale.push(arr[Math.floor(arr.length / 2)]);
+    finale.push(arr[Math.floor(arr.length/2)]);
     return finale;
   } else {
-    finale.push(arr[Math.floor(arr.length / 2) - 1]);
-    finale.push(arr[Math.floor(arr.length / 2)]);
+    finale.push(arr[Math.floor(arr.length/2) - 1]);
+    finale.push(arr[Math.floor(arr.length/2)]);
     return finale;
   }
-};
+}; 
 
 console.log(middle([14, 15]));
-console.log(middle([14, 15, 16]));
+console.log(middle([14, 15, ]));
 console.log(middle([14, 15, 16, 17]));
