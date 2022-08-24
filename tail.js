@@ -20,8 +20,10 @@ const tail = function(arrayOne) {
 const tail2 = function(arrayThree) {
   let final = arrayThree.slice(1);
   console.log(final);
+  return final;
 };
 
 tail([1, 2, 3, 4]);
 tail2([1, 2, 3, 4]);
 
+assertEqual(tail, tail2);
