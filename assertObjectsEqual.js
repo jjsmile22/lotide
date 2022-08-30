@@ -36,3 +36,5 @@ const assertObjectsEqual = function(firstObject, secondObject) {
 
   console.log(`🛑🛑🛑 Assertion Failed: ${firstArray} !== ${secondArray}`);
 };
+
+module.exports = assertObjectsEqual;
