@@ -19,4 +19,6 @@ const countLetters = function(val) {
   return result;
 };
 
+module.exports = countLetters;
+
 console.log(countLetters("apple of my eye"))
