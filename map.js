@@ -11,6 +11,8 @@ const map = function(array, callback) {
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
+module.exports = map;
+
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
