@@ -12,6 +12,7 @@ const takeUntil = function(array, callback) {
 
 };
 
+module.exports = takeUntil
 
 let result = takeUntil([1, 2, 3, 4, 5], x => x > 2);
 console.log(result);
